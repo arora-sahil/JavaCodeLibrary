@@ -5,30 +5,46 @@ enum Trucks implements IVehicle
     MahindraStorm
             {
                 @Override
+                double loadFactor() {
+                    return 0.75;
+                }
+
+                @Override
                 public double speed(int miles, int hour) {
                     System.out.println("MahindraStorm FIRST");
-                    return miles /(hour * 2);
+                    return miles /(hour * loadFactor());
                 }
             },
     TATAWARROR
             {
                 @Override
+                double loadFactor() {
+                    return 2;
+                }
+
+                @Override
                 public double speed(int miles, int hour) {
                     System.out.println("TATAWARROR SECOND");
 
-                    return miles /(hour * 3);
+                    return miles /(hour * loadFactor());
 
                 }
             },
     PIAGGIORANGER
             {
                 @Override
+                double loadFactor() {
+                    return 3;
+                }
+
+                @Override
                 public double speed(int miles, int hour) {
                     System.out.println("PIAGGIORANGER THIRD");
-                    return miles /(hour * 3);
+                    return miles /(hour * loadFactor());
 
                 }
             };
+    abstract double loadFactor();
 
     @Override
     public double speed(int miles, int hour) {
