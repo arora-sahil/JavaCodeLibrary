@@ -2,6 +2,7 @@ package com.java.enumexamples;
 
 enum Trucks implements IVehicle
 {
+
     MahindraStorm
             {
                 @Override
@@ -68,6 +69,7 @@ class MainClass {
         {
             System.out.println("Speed of " + truck.name()+ ": " + truck.speed(10000,30));  //Accessing enums directly using class name
             System.out.println("Mileage of " + truck.name()+ ": " + truck.mileage(10,10000));
+            System.out.println("ordinal: "+ truck.ordinal());
         }
     }
 
