@@ -1,4 +1,4 @@
-package com.java.interview.objecttypes;
+package com.java.interview.object.types;
 
 /* Java.lang.object has two very important methods defined: public boolean equals(Object obj) and public int hashCode(). */
 class Geek

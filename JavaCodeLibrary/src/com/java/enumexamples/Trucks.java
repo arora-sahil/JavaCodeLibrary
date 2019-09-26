@@ -1,13 +1,22 @@
 package com.java.enumexamples;
 
-enum Trucks implements IVehicle
+enum Trucks implements com.java.enumexamples.IVehicle
 {
 
     MahindraStorm
             {
+                String color()
+                {
+                    return "Red";
+                }
                 @Override
                 double loadFactor() {
                     return 0.75;
+                }
+
+                @Override
+                int count() {
+                    return 0;
                 }
 
                 @Override
@@ -21,6 +30,11 @@ enum Trucks implements IVehicle
                 @Override
                 double loadFactor() {
                     return 2;
+                }
+
+                @Override
+                int count() {
+                    return 0;
                 }
 
                 @Override
@@ -39,6 +53,11 @@ enum Trucks implements IVehicle
                 }
 
                 @Override
+                int count() {
+                    return 0;
+                }
+
+                @Override
                 public double speed(int miles, int hour) {
                     System.out.println("PIAGGIORANGER THIRD");
                     return miles /(hour * loadFactor());
@@ -46,6 +65,7 @@ enum Trucks implements IVehicle
                 }
             };
     abstract double loadFactor();
+    abstract int count();
 
     @Override
     public double speed(int miles, int hour) {

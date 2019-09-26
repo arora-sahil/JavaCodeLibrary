@@ -1,5 +1,7 @@
 package com.java.challenges;
 
+import com.java.arrays.BinarySearch;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Scanner;
@@ -8,6 +10,7 @@ import java.util.StringTokenizer;
 public class callHealth {
 	
 	public static void main(String args[] ) throws Exception {
+
         //Scanner
          Scanner s = new Scanner(System.in);
 			long N = s.nextLong();

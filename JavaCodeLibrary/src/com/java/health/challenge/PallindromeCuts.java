@@ -1,4 +1,4 @@
-package com.java.healthchallenge;
+package com.java.health.challenge;
 
 import java.util.Scanner;
 

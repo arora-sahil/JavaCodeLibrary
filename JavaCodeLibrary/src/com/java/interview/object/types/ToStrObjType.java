@@ -1,4 +1,4 @@
-package com.java.interview.objecttypes;
+package com.java.interview.object.types;
 
 //Java program to illustrate 
 //working of toString() method 

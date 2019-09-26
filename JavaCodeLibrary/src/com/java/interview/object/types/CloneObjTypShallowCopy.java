@@ -1,6 +1,5 @@
-package com.java.interview.objecttypes;
+package com.java.interview.object.types;
 
-import java.util.ArrayList; 
 // Refer this link https://www.geeksforgeeks.org/clone-method-in-java-2/
 //An object reference of this class is 
 //contained by Test3 

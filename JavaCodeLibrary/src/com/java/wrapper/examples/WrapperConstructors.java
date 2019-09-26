@@ -1,4 +1,4 @@
-package wrapper.examples;
+package com.java.wrapper.examples;
 
 public class WrapperConstructors {
 
