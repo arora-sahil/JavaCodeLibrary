@@ -82,7 +82,7 @@ enum Trucks implements com.java.enumexamples.IVehicle
 }
 class MainClass {
 
-    public static void main(String args[])
+     static public void main(String args[])
     {
         // See Main speed method will never be executed
         for(Trucks truck : Trucks.values())

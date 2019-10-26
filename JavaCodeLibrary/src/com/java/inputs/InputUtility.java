@@ -10,7 +10,6 @@ public interface InputUtility {
         try {
             System.out.print("enter array size :  ");
             int n = sc.nextInt();
-
             System.out.print("arr elements: ");
             int arr[] = new int[n];
 
@@ -45,7 +44,7 @@ public interface InputUtility {
         return str;
     }
     default int takeInput(){
-        System.out.print("Enter a Integer: ");
+      System.out.print("Enter a Integer: ");
 
         int n = sc.nextInt();
         return n;

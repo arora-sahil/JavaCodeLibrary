@@ -22,10 +22,10 @@ public class BinarySearch implements InputUtility {
         int element = 8;
         int begin = 0;
 
-
         int l = (arr.length -1);
         int mid = 0;
         mid = calculateMid(begin, l);
+
         for(int i=0;i <= l/2;i++)
         {
             if(arr[mid]==element)

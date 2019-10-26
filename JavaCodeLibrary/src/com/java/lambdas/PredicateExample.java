@@ -8,7 +8,6 @@ public class PredicateExample {
     public static void main(String[] args) {
 
         List<Student> listOfStudents = new ArrayList<Student>();
-
         listOfStudents.add(new Student(111, "John", 81.0, "Mathematics"));
 
         listOfStudents.add(new Student(222, "Harsha", 79.5, "History"));
@@ -29,18 +28,20 @@ public class PredicateExample {
 
         listOfStudents.add(new Student(101010, "Chris", 89.8, "Computers"));
 
-        Predicate<Student> mathematicsPredicate = (Student student) -> student.getSpecialization().equals("Mathematics");
+        Predicate<Student> mathematicsPredicate = (student) -> student.getSpecialization().equals("Mathematics");
+
+//        Consumer<Student> mathematicsConsumer = (student) -> System.out.println("hi");
 
         List<Student> mathematicsStudents = new ArrayList<Student>();
 
         for (Student student : listOfStudents)
         {
+//            mathematicsConsumer.accept(student);
             if (mathematicsPredicate.test(student))
             {
                 mathematicsStudents.add(student);
             }
         }
-
         System.out.println(mathematicsStudents);
 
     }

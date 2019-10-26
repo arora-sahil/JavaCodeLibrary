@@ -1,5 +1,5 @@
 package com.java.lambdas;
 
 public interface FuncInterface  {
-    void m2();
+    int m2(int a, int b);
 }

@@ -3,6 +3,7 @@ package com.java.arrays;
 import com.java.inputs.InputUtility;
 
 public class RemoveDuplicatesFromArray implements InputUtility {
+
     public static void main(String args[])
     {
         int arr[] = new RemoveDuplicatesFromArray().takeIntegerInput(); //1 2 1 4 7 6

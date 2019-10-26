@@ -3,7 +3,7 @@ package com.java.arrays;
 import java.io.*;
 import java.util.*;
 
-public class fibo {
+public class Fibo {
     public static void main(String[] args) throws Exception {
         Scanner in = new Scanner(System.in);
         final String fileName = System.getenv("OUTPUT_PATH");
